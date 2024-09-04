@@ -1,6 +1,9 @@
 <?php
 class Animal{
-    
+  public function greets($animal){
+    return $animal->greet();
+
+  }
 }
 
 class Cat extends Animal{
@@ -15,4 +18,6 @@ class Dog extends Animal{
     }
 }
 $Cat = new Cat();
-echo $cat->greet();
+$animal = new animal ;
+echo $animal->greets($Cat); 
+// echo $Cat->greet();
